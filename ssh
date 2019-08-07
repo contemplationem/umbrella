@@ -10,9 +10,4 @@ service ssh restart
 # paste status of SSH
 sudo systemctl status sshd
 
-# get the process ID of the request for SSH status
-PID=$!
-# wait for 2 seconds
-sleep 2
-# then kill it
-kill $PID
+q
