@@ -1,3 +1,5 @@
+#!/usr/bin/env bash 
+# The order is kind of arbitrary,but just go with it. 
 sudo apt update
 sudo apt clean
 sudo apt update
