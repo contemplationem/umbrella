@@ -10,4 +10,5 @@ service ssh restart
 # paste status of SSH
 sudo systemctl status sshd
 
-q
+# kill the process once it's done
+ps -e | pgrep 
