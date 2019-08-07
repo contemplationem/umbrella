@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # disable Wayland display server by uncommenting "WaylandEnable=false" 
 sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 
