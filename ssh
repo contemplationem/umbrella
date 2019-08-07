@@ -1,5 +1,11 @@
+# ensure SSH is installed
+sudo apt install ssh
+
 # enable root login over SSH
-sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/ssh_config
+sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/ssh_config
 
 # restart SSH
 service ssh restart
+
+# paste status of SSH
+sudo systemctl status sshd
