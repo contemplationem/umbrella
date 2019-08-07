@@ -11,3 +11,5 @@ fi
 
 # enable tap-to-click in xfce
 xfconf-query -c pointers -p /Atmel_maXTouch_Touchpad/Properties/libinput_Tapping_Enabled -n -t int -s 1
+
+quit
