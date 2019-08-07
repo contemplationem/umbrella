@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Tor
 wget  -P ~/Desktop/ "https://www.torproject.org/dist/torbrowser/8.5.4/tor-browser-linux64-8.5.4_en-US.tar.xz"
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.orggpgv --keyring ./tor.keyring tor-browser-linux64-8.5.4_en-US.tar.xz{.asc,}
