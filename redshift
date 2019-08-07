@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # install redshift for Unity desktop in the background
 sudo apt-get -y install redshift redshift-gtk &
 
