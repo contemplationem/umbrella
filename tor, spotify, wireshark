@@ -1,4 +1,4 @@
-# Tor (The Onion Router)
+# Tor
 wget  -P ~/Desktop/ "https://www.torproject.org/dist/torbrowser/8.5.4/tor-browser-linux64-8.5.4_en-US.tar.xz"
 tar -xf tor-browser-linux64-8.5.4_en-US.tar.xz
 ./start-tor-browser.desktop --register-app
