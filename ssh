@@ -2,13 +2,10 @@
 sudo apt install ssh
 
 # enable root login over SSH
-sudo sed -i 's/#PermitRoot/PermitRoot/' /etc/ssh/ssh_config
+sudo sed -i 's/#PermitRootLogin\ prohibit-password/PermitRootLogin\ yes/' /etc/ssh/ssh_config
 
 # restart SSH
 service ssh restart
 
 # paste status of SSH
 sudo systemctl status sshd
-
-# kill the process once it's done
-ps -e | pgrep 
