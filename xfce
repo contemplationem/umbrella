@@ -6,8 +6,8 @@ sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 sudo apt-get -y install xfce4 | grep 'I: Set the RESUME variable to override this.' &> /dev/null
 if [ $? == 0 ]; then
    grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev
-   youyou = `grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev`
-   echo RESUME=UUID=$youyou
+   youyoueyedee = `grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev`
+   echo RESUME=UUID=$youyoueyedee
 fi
 
 # enable tap-to-click in xfce
