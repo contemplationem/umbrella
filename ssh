@@ -9,3 +9,5 @@ service ssh restart
 
 # paste status of SSH
 sudo systemctl status sshd
+
+quit
