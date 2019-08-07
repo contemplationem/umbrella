@@ -2,8 +2,7 @@
 sudo apt install ssh
 
 # enable root login over SSH
-sudo sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/" /etc/ssh/ssh_config
-# for some reason, this command is not working. the rest of it is though. so I guess I just won't be able to get root access through SSH
+awk '{ gsub ("#PermitRootLogin prohibit-password", "PermitRootLogin yes", $0); print}'
 
 # restart SSH
 service ssh restart
