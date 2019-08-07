@@ -1,5 +1,5 @@
 # enable root login over SSH
-sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/ssh_config
 
 # restart SSH
-service sshd restart
+service ssh restart
