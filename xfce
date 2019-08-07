@@ -1,5 +1,5 @@
 # disable Wayland display server by uncommenting "WaylandEnable=false" 
-sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
+sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 
 # install xfce
 sudo apt install xfce4
