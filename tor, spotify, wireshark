@@ -7,7 +7,7 @@ wget  -P ~/Desktop/ "https://www.torproject.org/dist/torbrowser/8.5.4/tor-browse
 # gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
 # gpgv --keyring ./tor.keyring tor-browser-linux64-8.5.4_en-US.tar.xz{.asc,}
 tar -xf ~/Desktop/tor-browser-linux64-8.5.4_en-US.tar.xz
-cd Desktop/tor-browser_en-US
+cd ~/Desktop/tor-browser_en-US
 chmod +x start-tor-browser.desktop
 ./start-tor-browser.desktop --register-app
 cd ..
@@ -21,7 +21,7 @@ sudo snap install spotify
 # Wireshark
 sudo apt-get install wireshark-qt
 # wget -P ~/Desktop/ "https://2.na.dl.wireshark.org/src/wireshark-3.0.3.tar.xz"
-# # Okay, there's a way to verify Wireshark's checksum and the signature of the checksum, something about GPG, but I can't figure 
-# # it out. SO I guess for now you're getting a possibly corrupted file to play with :) You're welcome. 
+# # Okay, there's a way to verify Wireshark's checksum and the signature of the checksum itself, something about GPG, but I 
+# # can't figure it out. So I guess for now you're getting a possibly corrupted file to play with :) You're welcome. 
 # tar -xf ~/Desktop/wireshark-3.0.3.tar.xz
 # rm wireshark-3.0.3.tar.xz
