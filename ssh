@@ -3,7 +3,7 @@
 sudo apt install ssh
 
 # enable root login over SSH
-awk '{ gsub ("#PermitRootLogin prohibit-password", "PermitRootLogin yes", $0); print}' /etc/ssh/sshd_config > temp.txt && mv temp.txt /etc/ssh/sshd_config
+sudo awk '{ gsub ("#PermitRootLogin prohibit-password", "PermitRootLogin yes", $0); print}' /etc/ssh/sshd_config > temp.txt && mv temp.txt /etc/ssh/sshd_config
 
 # restart SSH
 service ssh restart
