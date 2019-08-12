@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # disable Wayland display server by uncommenting "WaylandEnable=false" 
 sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
+echo 'Finished disabling Wayland display server.'
 
 # install xfce
 sudo apt-get -y install xfce4 | grep 'I: Set the RESUME variable to override this.' &> /dev/null
@@ -9,6 +10,8 @@ if [ $? == 0 ]; then
    youyoueyedee = `grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev`
    echo RESUME=UUID=$youyoueyedee
 fi
+echo 'Finished installing xfce4.'
 
 # enable tap-to-click in xfce
 xfconf-query -c pointers -p /Atmel_maXTouch_Touchpad/Properties/libinput_Tapping_Enabled -n -t int -s 1
+echo 'Finished enabling tap-to-click in xfce desktop environment.'
