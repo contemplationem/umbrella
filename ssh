@@ -4,9 +4,11 @@ sudo apt install ssh
 
 # enable root login over SSH
 sudo awk '{ gsub ("#PermitRootLogin prohibit-password", "PermitRootLogin yes", $0); print}' /etc/ssh/sshd_config > temp.txt && mv temp.txt /etc/ssh/sshd_config
+echo 'I don't know how well this code to enable root login over SSH works, but well, at least we're done with that task. Onward.'
 
 # restart SSH
 service ssh restart
+echo 'Restarted SSH.'
 
 # paste status of SSH
 sudo systemctl status sshd
