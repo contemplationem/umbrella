@@ -13,10 +13,12 @@ chmod +x start-tor-browser.desktop
 cd ..
 rm tor-browser-linux64-8.5.4_en-US.tar.xz
 cd
+echo 'Finished installing and, ideally, de-tarring Tor.' 
 
 # Spotify, because yes
 sudo snap install spotify
 # Since Spotify on Linux is not officially supported, there's no way to verify checksums. Just... hope. 
+echo 'Finished installing Spotify. Might want to go find a way to verify its checksum. Or not. Your choice.'
 
 # Wireshark
 sudo apt-get install wireshark-qt
@@ -25,3 +27,4 @@ sudo apt-get install wireshark-qt
 # # can't figure it out. So I guess for now you're getting a possibly corrupted file to play with :) You're welcome. 
 # tar -xf ~/Desktop/wireshark-3.0.3.tar.xz
 # rm wireshark-3.0.3.tar.xz
+echo 'Finished installing Wireshark. Good luck getting rid of those error messages though, the ones that pop up when you first try to enter Wireshark. I don't know how to fix that.'
