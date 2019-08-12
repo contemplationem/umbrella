@@ -4,12 +4,7 @@ sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 echo 'Finished disabling Wayland display server.'
 
 # install xfce
-sudo apt-get -y install xfce4 | grep 'I: Set the RESUME variable to override this.' &> /dev/null
-if [ $? == 0 ]; then
-   grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev
-   youyoueyedee = `grep 'UUID=' | awk -F'=' '{print $2}' | rev | cut -c 2- | rev`
-   echo RESUME=UUID=$youyoueyedee
-fi
+sudo apt-get -y install xfce4
 echo 'Finished installing xfce4.'
 
 # enable tap-to-click in xfce
