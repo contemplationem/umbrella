@@ -4,5 +4,5 @@ sudo apt -y update
 sudo apt clean
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt autoremove
-sudo apt autoclean
+sudo apt -y autoremove
+sudo apt -y autoclean
