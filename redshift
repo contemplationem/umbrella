@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # install redshift for Unity desktop in the background
 sudo apt-get -y install redshift redshift-gtk &
+echo 'Finished installing redshift app.'
 
 # set location manually for the redshift app in the background (the coordinates are for Tahoe)
 redshift -l 40:-60 &
+echo 'Finished manually (haha, does it count as manual if you let this script do it?) setting location in app as Tahoe, California.'
