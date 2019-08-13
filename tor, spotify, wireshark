@@ -28,4 +28,4 @@ sudo apt-get -y install wireshark-qt
 # # can't figure it out. So I guess for now you're getting a possibly corrupted file to play with :) You're welcome. 
 # tar -xf ~/Desktop/wireshark-3.0.3.tar.xz
 # rm wireshark-3.0.3.tar.xz
-echo 'Finished installing Wireshark. Good luck getting rid of those error messages though, the ones that pop up when you first try to enter Wireshark. I don\'t know how to fix that.'
+echo "Finished installing Wireshark. Good luck getting rid of those error messages though, the ones that pop up when you first try to enter Wireshark. I don't know how to fix that."
