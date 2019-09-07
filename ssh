@@ -14,9 +14,11 @@ echo ''
 service ssh restart
 echo 'Restarted SSH.'
 echo ''
+echo ''
 
 # paste status of SSH
 sudo systemctl status sshd
+exit
 
 echo ''
 echo 'I havent yet found a way to make the program exit itself and return you to the command line. So just hit the Q key and it'll take you back safely.' 
