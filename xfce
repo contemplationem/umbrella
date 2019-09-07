@@ -2,11 +2,21 @@
 # disable Wayland display server by uncommenting "WaylandEnable=false" 
 sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 echo 'Finished disabling Wayland display server.'
+echo ''
+echo ''
 
 # install xfce
 sudo apt-get -y install xfce4
 echo 'Finished installing xfce4.'
+echo ''
+echo ''
 
 # enable tap-to-click in xfce
 xfconf-query -c pointers -p /Atmel_maXTouch_Touchpad/Properties/libinput_Tapping_Enabled -n -t int -s 1
 echo 'Finished enabling tap-to-click in xfce desktop environment.'
+echo ''
+echo ''
+
+# I don't know which way this technically sets the scrolling, but it's the way I like it, so deal with it. 
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+echo 'Finished setting scroll direction.'
