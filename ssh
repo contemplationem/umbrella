@@ -4,14 +4,18 @@ sudo apt install ssh
 
 # enable root login over SSH
 sudo awk '{ gsub ("#PermitRootLogin prohibit-password", "PermitRootLogin yes", $0); print}' /etc/ssh/sshd_config > temp.txt && mv temp.txt /etc/ssh/sshd_config
+echo 
 echo 'I don't know how well this code to enable root login over SSH works, but well, at least we're done with that task. Onward.'
+echo
 
 # restart SSH
 service ssh restart
 echo 'Restarted SSH.'
+echo
 
 # paste status of SSH
 sudo systemctl status sshd
 
-quit
-echo 'I haven't yet found a way to make the program exit itself and return you to the command line. So just hit the Q key and it'll take you back safely.' 
+echo
+echo 'I havent yet found a way to make the program exit itself and return you to the command line. So just hit the Q key and it'll take you back safely.' 
+echo
