@@ -18,5 +18,5 @@ echo ''
 echo ''
 
 # I don't know which way this technically sets the scrolling, but it's the way I like it, so deal with it. 
-gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 echo 'Finished setting scroll direction.'
