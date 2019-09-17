@@ -2,7 +2,7 @@
 # Tor
 cd
 cd
-wget  -P ~/Desktop/ "https://dist.torproject.org/torbrowser/8.5.5/tor-browser-linux64-8.5.5_en-US.tar.xz
+wget  -P ~/Desktop/ "https://dist.torproject.org/torbrowser/8.5.5/tor-browser-linux64-8.5.5_en-US.tar.xz"
 # gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
 # gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
 # gpgv --keyring ./tor.keyring tor-browser-linux64-8.5.4_en-US.tar.xz{.asc,}
@@ -28,4 +28,6 @@ sudo apt-get -y install wireshark-qt
 # # can't figure it out. So I guess for now you're getting a possibly corrupted file to play with :) You're welcome. 
 # tar -xf ~/Desktop/wireshark-3.0.3.tar.xz
 # rm wireshark-3.0.3.tar.xz
+echo ""
 echo "Finished installing Wireshark. Good luck getting rid of those error messages though, the ones that pop up when you first try to enter Wireshark. I don't know how to fix that."
+echo ""
