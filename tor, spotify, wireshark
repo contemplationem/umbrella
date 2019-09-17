@@ -7,12 +7,12 @@ wget  -P ~/Desktop/ "https://dist.torproject.org/torbrowser/8.5.5/tor-browser-li
 # gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
 # gpgv --keyring ./tor.keyring tor-browser-linux64-8.5.4_en-US.tar.xz{.asc,}
 # 
-tar xf ~/Desktop/tor-browser-linux64-8.5.4_en-US.tar.xz
+tar xf ~/Desktop/tor-browser-linux64-8.5.5_en-US.tar.xz
 cd ~/Desktop/tor-browser_en-US
 chmod +x start-tor-browser.desktop
 ./start-tor-browser.desktop --register-app
 cd ..
-rm tor-browser-linux64-8.5.4_en-US.tar.xz
+rm tor-browser-linux64-8.5.5_en-US.tar.xz
 cd
 echo 'Finished installing and, ideally, de-tarring Tor.' 
 
