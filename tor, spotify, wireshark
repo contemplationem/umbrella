@@ -2,7 +2,7 @@
 # Tor
 cd
 cd
-wget  -P ~/Desktop/ "https://www.torproject.org/dist/torbrowser/8.5.4/tor-browser-linux64-8.5.4_en-US.tar.xz"
+wget  -P ~/Desktop/ "https://dist.torproject.org/torbrowser/8.5.5/tor-browser-linux64-8.5.5_en-US.tar.xz
 # gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
 # gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
 # gpgv --keyring ./tor.keyring tor-browser-linux64-8.5.4_en-US.tar.xz{.asc,}
