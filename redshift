@@ -7,6 +7,6 @@ echo ''
 echo ''
 
 # set location manually for the redshift app in the background (the coordinates are for Tahoe)
-echo 'Hit Ctrl+C after this command. It\'ll be fine.' 
+echo 'Hit Ctrl+C after this command. Itll be fine.' 
 nohup redshift -l 40:-60
 echo 'Finished setting location in app as Tahoe, California.'
