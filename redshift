@@ -9,4 +9,4 @@ echo ''
 # set location manually for the redshift app in the background (the coordinates are for Tahoe)
 echo 'Hit Ctrl+C after this command. It\'ll be fine.' 
 nohup redshift -l 40:-60
-echo 'Finished manually (haha, does it count as manual if you let this script do it?) setting location in app as Tahoe, California.'
+echo "Finished manually (haha, does it count as manual if you let this script do it?) setting location in app as Tahoe, California."
