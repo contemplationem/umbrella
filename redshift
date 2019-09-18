@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # install redshift for Unity desktop 
 sudo apt-get -y install redshift redshift-gtk
+echo ''
 echo 'Finished installing redshift app.'
+echo ''
+echo ''
 
 # set location manually for the redshift app in the background (the coordinates are for Tahoe)
 echo 'Hit Ctrl+C after this command. It\'ll be fine.' 
