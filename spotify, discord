@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Spotify, because yes
+sudo snap install spotify
+# Since Spotify on Linux is not officially supported, there's no way to verify checksums. Just... hope. 
+echo ''
+echo 'Finished installing Spotify. Might want to go find a way to verify its checksum. Or not. Your choice.'
+echo ''
+echo ''
+
+# Discord, also because yes
+sudo snap install discord
+# Go check checksums yourself lol
+echo ''
+echo 'Finished installing Spotify. Might want to go find a way to verify its checksum. Or not. Your choice.'
+echo ''
