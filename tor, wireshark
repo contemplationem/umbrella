@@ -28,3 +28,12 @@ sudo apt-get -y install wireshark-qt
 echo ""
 echo "Finished installing Wireshark. Good luck getting rid of those error messages though, the ones that pop up when you first try to enter Wireshark. I don't know how to fix that."
 echo ""
+
+#GtkHash
+sudo apt-get -y install gtkhash
+
+# ifconfig and so on
+sudo apt install net-tools
+
+# tools so you can run C/C++ programs
+sudo apt-get -y install build-essential
