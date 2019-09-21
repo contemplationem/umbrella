@@ -1,8 +1,19 @@
 #!/usr/bin/env bash 
-# The order is kind of arbitrary,but just go with it. 
+# Updates and upgrades
+# The order is kind of arbitrary, but just go with it. 
 sudo apt -y update
 sudo apt clean
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y autoremove
 sudo apt -y autoclean
+
+# Get rid of hanging from snappy daemon, or something like that, I don't know
+sudo sed -i 's/splash/splash noresume/g'
+sudo update-grub
+
+echo ''
+echo ''
+echo 'Reboot the computer after this.' 
+echo ''
+echo ''
