@@ -8,8 +8,18 @@ echo ''
 echo ''
 
 # Discord, also because yes
+echo 'Installing Discord...'
 sudo snap install discord
 # Go check checksums yourself lol
 echo ''
 echo 'Finished installing Spotify. Might want to go find a way to verify its checksum. Or not. Your choice.'
+echo ''
+echo ''
+
+# Telegram
+echo 'Installing Telegram...' 
+sudo snap install telegram-deskop
+sudo snap install telegram-cli
+echo ''
+echo 'Finished installing Telegram.'
 echo ''
