@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# Fyi, here's how to switch desktops from GNOME to Xfce:
+## 1. Disable Wayland display server
+## 2. Install Xfce
+## 3. (Enable tap-to-click in Xfce, because it drives me crazy when it doesn't do that)
+
 # disable Wayland display server by uncommenting "WaylandEnable=false" 
 sudo sed -i 's/#Way/Way/g' /etc/gdm3/custom.conf
 echo 'Finished disabling Wayland display server.'
