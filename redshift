@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# Redshift (source: linoxide.com): 
+## Install by apt-get
+## Start by using Application Finder, running redshift-gtk in Terminal (graphical), or running redshift in Terminal (CLI). 
+## Don’t forget to make a config file (~/.config/redshift.conf) (see linoxide.com). For our Californian purposes, 
+## latitude is 40 and longitude is -60. 
+
 # install redshift for Unity desktop 
 sudo apt-get -y install redshift redshift-gtk
 echo ''
