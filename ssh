@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# Fyi, how to enable ssh (source: access.redhat.com):
+## 1. Enable root login over SSH by setting (uncommenting) PermitRootLogin yes. 
+## 2. Restart ssh. (Check status as necessary.)
+
 # ensure SSH is installed
 sudo apt -y install ssh
 
