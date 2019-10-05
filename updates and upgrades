@@ -9,7 +9,7 @@ sudo apt -y autoremove
 sudo apt -y autoclean
 
 # Get rid of hanging from snappy daemon, or something like that, I don't know
-sudo sed -i 's/splash/splash noresume/g' /etc/default/grub
+sudo sed -i 's#splash"#splash noresume"#g' /etc/default/grub
 sudo update-grub
 
 echo ''
