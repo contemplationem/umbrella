@@ -41,6 +41,9 @@ sudo apt install net-tools
 sudo apt-get -y install build-essential
 
 # pwntools
-sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
-pip install --upgrade pip
-pip install --upgrade pwntools
+# sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
+# pip install --upgrade pip
+# pip install --upgrade pwntools
+pip install --user pwn
+echo 'Use `python -c "from pwn import *"`'
+
