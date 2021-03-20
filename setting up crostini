@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#basics
+sudo apt install nano
+sudo apt install npm
+npm install -g nodemon
+
+
+#get pip
+sudo apt install python3-distutils 
+cd
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
+
+
+#get adpb
+python3 -m pip3 install -U discord.py
+pip install requests
+cd
+git clone https://github.com/radradix/adpb.git
+cd adpb
+python3 index.py
+
+
+systemctl enable ssh
+systemctl restart ssh
+systemctl status sshd
+
+
+#see if the ports are up
+sudo apt install netstat
+sudo netstat -plant | grep :22
+
+
+
+echo 'Delete /etc/ssh/sshd_not_to_be_run yourself.'
+echo 'Set a password so you can come in from a different place on the network:'
+sudo passwd
+echo 'Get hostname to your clipboard: '
+hostname -I 
+echo 'Download Connection Forwarder and enable a rule forwarding TCP 0.0.0.0:22222 --> whatever your hostname IP (crostini IP) was, port 22'
+echo 'Find your Chromebook's local IP by going into Settings and making it static'
+echo 'Then run `ssh -vvv USERNAME@CHROMEBOOK_LOCAL_IP -p22222
